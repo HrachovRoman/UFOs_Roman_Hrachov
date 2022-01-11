@@ -22,55 +22,55 @@ margin-top: 25px;
     gap: 20px;
 
 }
-.sort {
+// .sort {
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 10px;
-    max-width: 1320px;
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: flex-start;
+//     border: 1px solid rgb(255, 255, 255);
+//     border-radius: 5px;
+//     padding: 20px;
+//     margin-bottom: 10px;
+//     max-width: 1320px;
    
 
-    &__label {
-        width: 150px;
-        border: 2px solid #008fa1;
-        background-color: #00BCD4;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        border-radius: 5px;
-        height: 100%;
-        width: 5rem;
-        margin-right: 5px;
-    }
+//     &__label {
+//         width: 150px;
+//         border: 2px solid #008fa1;
+//         background-color: #00BCD4;
+//         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+//         border-radius: 5px;
+//         height: 100%;
+//         width: 5rem;
+//         margin-right: 5px;
+//     }
 
-    &__select {
-        display: inline-block;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        border-radius: 5px;
-        z-index: 1;
-        margin-right: 15px;
-    }
+//     &__select {
+//         display: inline-block;
+//         background-color: #f9f9f9;
+//         min-width: 160px;
+//         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+//         border-radius: 5px;
+//         z-index: 1;
+//         margin-right: 15px;
+//     }
 
-    &__select-item {
-    }
+//     &__select-item {
+//     }
 
-    &__filter {
-        margin-left: auto;
-    }
+//     &__filter {
+//         margin-left: auto;
+//     }
 
-    &__filter-tags {
+//     &__filter-tags {
         
-        background-color: #f9f9f9;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        border-radius: 5px;
-        z-index: 1;
-        width: 250px;
-    }
-}
+//         background-color: #f9f9f9;
+//         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+//         border-radius: 5px;
+//         z-index: 1;
+//         width: 250px;
+//     }
+// }
 
 
 .card {

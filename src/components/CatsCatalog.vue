@@ -1,7 +1,7 @@
 <template>
 <div class="container">
-
-    <div class="sort">
+<SortComponent />
+    <!-- <div class="sort">
       <label class="sort__label" for="sort">SORT</label>
         <select v-model="selected" name="option" class="sort__select" id='sort'>
             <option class="sort__select-item"  value="Default">Default</option>
@@ -11,7 +11,7 @@
       <div class="sort__filter">
           <input type="text" placeholder="Filter" class="sort__filter-tags">
       </div>
-    </div>
+    </div> -->
 
   <div class="cards-wrapper">
     <div class="card" 
@@ -40,10 +40,12 @@
 
 <script>
   import {mapActions, mapGetters} from 'vuex'
+  import SortComponent from './SortComponent.vue'
 
   export default {
     name: 'CatsCatalog',
     components: {
+      SortComponent
     },
     data() {
       return {
@@ -51,16 +53,16 @@
       }
     },
     computed: {
-      getProducts () {
-        if (this.selected === 'Comments') {
-          return this.$store.getters.PRODUCTS.sort((a, b) => b.comments - a.comments);   
-        } else if (this.selected === "Likes") {
-          return this.$store.getters.PRODUCTS.sort((a, b) => b.likes - a.likes); 
-        } else {
-          this.$store.dispatch('GET_PRODUCTS_FROM_API')
-          return this.$store.getters.PRODUCTS;  
-        }
-      },
+      // getProducts () {
+      //   if (this.selected === 'Comments') {
+      //     return this.$store.getters.PRODUCTS.sort((a, b) => b.comments - a.comments);   
+      //   } else if (this.selected === "Likes") {
+      //     return this.$store.getters.PRODUCTS.sort((a, b) => b.likes - a.likes); 
+      //   } else {
+      //     this.$store.dispatch('GET_PRODUCTS_FROM_API')
+      //     return this.$store.getters.PRODUCTS;  
+      //   }
+      // },
       ...mapGetters([
         'PRODUCTS'
       ])
