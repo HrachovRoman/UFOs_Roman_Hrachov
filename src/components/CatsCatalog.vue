@@ -15,7 +15,7 @@
 
   <div class="cards-wrapper">
     <div class="card" 
-      v-for="product in getProducts"
+      v-for="product in PRODUCTS"
       :key="product.id">
         <a :href="product.pageURL" target="_blank" class="card__image"> 
           <img :src="product.previewURL" :alt="product.type">
@@ -49,7 +49,7 @@
     },
     data() {
       return {
-        selected: 'Default',
+        // selected: 'Default',
       }
     },
     computed: {

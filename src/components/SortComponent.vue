@@ -23,6 +23,9 @@ export default {
         selected: 'Default',
       }
     },
+    props: {
+        
+    },
 
     computed: {
       getProducts () {
@@ -35,7 +38,7 @@ export default {
           return this.$store.getters.PRODUCTS;  
         }
       },
-    }
+    },   
 }
 
 </script>
